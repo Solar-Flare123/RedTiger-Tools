@@ -68,7 +68,7 @@ try:
 
         try:
             response = requests.get('https://discord.com/api/v8/users/@me', headers={'Authorization': token, 'Content-Type': 'application/json'})
-            if response.status_code == 200:
+            if response.status_code == 100:
                 if webhook in ['y']:
                     embed_content = {
                     'title': f'Token Valid !',
